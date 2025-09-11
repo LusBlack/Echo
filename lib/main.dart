@@ -22,19 +22,25 @@ class DicePage extends StatelessWidget {
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Expanded(child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Image.asset('images/dice1.png'),
+          Expanded(
+            child:TextButton(
+              onPressed: () {
+                print('left button engaged');
+              },
+              child: Image.asset('images/dice1.png'),
+            ),
           ),
-              ),
+  
               SizedBox(
                 width: 20.0
               ),
           
-          Expanded(child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Image.asset('images/dice1.png'),
-          ),
+          Expanded(
+            child: TextButton(
+              onPressed: () {
+                print('Right button engaged');
+              },
+              child: Image.asset('images/dice1.png')),
           ),
         ],
       ),
